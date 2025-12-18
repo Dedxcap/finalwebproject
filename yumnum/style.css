@@ -1,0 +1,284 @@
+/*YumNum Market Styles */
+
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    margin: 0;
+    padding: 0;
+}
+
+/*header styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid #e0e0e0;
+    color: #000;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+}
+
+/* navbar styling */
+.navbar {
+    background-color: #198754;
+}
+
+/* Navbar links (light mode) */
+.navbar .nav-link {
+    color: #212529;
+}
+.navbar .nav-link:hover {
+    color: #C0C0C0;
+}
+
+/* ----Dark mode styling*/
+.dark-mode {
+    background-color: #222;
+    color: #eee;
+}
+.dark-mode header {
+    background-color: #333 !important; /* force dark background */
+    color: #eee;
+}
+
+
+/* Navbar links (dark mode) */
+.dark-mode .navbar .nav-link {
+    color: #fff !important;
+}
+.dark-mode .navbar .nav-link:hover {
+    color: #90ee90 !important;
+}
+
+/* Header text/logo links (dark mode) */
+.dark-mode header a,
+.dark-mode header h1,
+.dark-mode header h2 {
+    color: #eee !important;
+}
+
+/* Cards */
+.dark-mode .card {
+    background-color: #333;
+    color: #eee;
+}
+
+/* Footer */
+.dark-mode footer {
+    background-color: #111;
+    color: #eee;
+}
+
+.dark-mode .modal-content {
+    background-color: #333;
+    color: #eee;
+}
+
+/* Light mode nav dropdown */
+.navbar .dropdown-menu {
+    background-color: #fff;
+    border: none;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+    color: #212529;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #f8f9fa; /* subtle hover */
+    color: #198754;            /* Bootstrap green accent */
+}
+
+/* Dark mode departmetn dropdown */
+.dark-mode .dropdown-menu {
+    background-color: #333;   /* match dark header/nav */
+    border: none;
+}
+
+.dark-mode .dropdown-menu .dropdown-item {
+    color: #fff;              /* light text */
+}
+
+.dark-mode .dropdown-menu .dropdown-item:hover {
+    background-color: #444;   /* subtle hover background */
+    color: #90ee90;           /* your green hover accent */
+}
+/*-----about section Dark Mode*/
+.dark-mode .about-section {
+    background-color: #333;
+}
+
+.dark-mode .about-section h2, .dark-mode .about-section p, .dark-mode .about-section .slogan {
+    color: #eee;            /* light text */
+}
+
+/* -----Dark mode review form */
+.dark-mode .review-form {
+    background-color: #333;
+    color: #eee;
+}
+.dark-mode .review-form .form-control,
+.dark-mode .review-form .form-select {
+    background-color: #444;   /
+    color: #eee;
+    border: 1px solid #666;
+}
+.dark-mode .review-form .btn {
+    background-color: #198754;
+    color: #fff;
+}
+
+/* -----Cards */
+.card {
+    border: 7px solid #198754;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+    border-color: #198754;
+}
+
+.dark-mode .card {
+    background-color: #333;
+    color: #eee;
+}
+
+/* ------Footer */
+footer {
+    margin-top: 40px;
+}
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ------Scroll-to-top button */
+#scrollTopBtn {
+    z-index: 999;
+}
+
+/* ----Review form */
+form .form-floating {
+    margin-bottom: 1rem;
+}
+
+form .is-invalid {
+    border: 2px solid #dc3545;
+}
+
+form .btn {
+    width: 100%;
+    font-weight: bold;
+}
+
+/* Review form container */
+.review-form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fdfdfd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Labels */
+.review-form label {
+    font-weight: 500;
+}
+
+/* Inputs and textarea */
+.review-form .form-control {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-form .form-control:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+}
+
+/* rating select */
+.review-form .form-select {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Submit button */
+.review-form .btn {
+    width: 100%;
+    font-weight: bold;
+    background-color: #198754;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.review-form .btn:hover {
+    background-color: #146c43;
+}
+
+
+/* ------About Us page */
+.about-section {
+    background-color: #fdfdfd;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    line-height: 1.7;
+}
+
+
+/* Headline */
+.about-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #198754;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* slogan */
+.about-section .slogan {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+/* Regular paragraphs */
+.about-section p {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+/*--------Location page */
+.location-map {
+    max-width: 800px;
+    border: 3px solid #198754;
+}
+
+/*--------Sitemap page */
+.list-group-item a {
+    text-decoration: none;
+    color: #198754;
+    font-weight: 500;
+}
+
+.list-group-item a:hover {
+    text-decoration: underline;
+}

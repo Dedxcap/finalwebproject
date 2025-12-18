@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - YumNum Market</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-light p-3 d-flex justify-content-between align-items-center">
+    <a href="index.html" class="navbar-brand">
+        <img src="images/logo.svg" alt="YumNum Logo" height="50" />
+    </a>
+    <div>
+        <a href="index.html"><i class="bi bi-instagram mx-2"></i></a>
+        <a href="index.html"><i class="bi bi-facebook mx-2"></i></a>
+        <a href="index.html"><i class="bi bi-linkedin mx-2"></i></a>
+    </div>
+</header>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">YumNum Market</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="review.html">Reviews</a></li>
+                <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Departments</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="produce.html">Produce</a></li>
+                        <li><a class="dropdown-item" href="deli.html">Deli</a></li>
+                        <li><a class="dropdown-item" href="grocery.html">Grocery</a></li>
+                        <li><a class="dropdown-item" href="dairy.html">Dairy</a></li>
+                        <li><a class="dropdown-item" href="bakery.html">Bakery</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Reviews Section -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">Customer Reviews</h2>
+
+    <!-- Sample Reviews -->
+    <div class="row mb-5">
+        <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+                <p>"The apples are the best, red delicious are the best of course, and the staff are super friendly!"</p>
+                <small class="text-muted">– Sarah Eats Apples</small>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+                <p>"I love the bakery section. The bread tastes like bread."</p>
+                <small class="text-muted">– James Kicks Rocks</small>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+                <p>"Great selection of groceries and fair prices. YumNum is my new favorite market."</p>
+                <small class="text-muted">– Scott the Great</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Review Form -->
+    <h3 class="mb-3">Leave Your Review</h3>
+    <form class="review-form">
+        <!-- Name -->
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="name" name="name">
+            <label for="name">Name</label>
+        </div>
+
+        <!-- Email -->
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" name="email">
+            <label for="email">Email</label>
+        </div>
+
+        <!-- Rating -->
+        <div class="mb-3">
+            <label for="rating" class="form-label">Rating</label>
+            <select class="form-select" id="rating" required>
+                <option value="">Choose...</option>
+                <option value="5">Excellent</option>
+                <option value="4">Good</option>
+                <option value="3">Average</option>
+                <option value="2">Poor</option>
+                <option value="1">Terrible</option>
+            </select>
+        </div>
+
+        <!-- Review Title -->
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="title" name="title">
+            <label for="title">Review Title</label>
+        </div>
+
+        <!-- Review Text -->
+        <div class="form-floating mb-3">
+            <textarea class="form-control" id="review" name="Review"></textarea>
+            <label for="review">Review</label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-success">Submit Review</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-4">
+    <p>This is a School Project</p>
+    <p>Contact: 1234 Market Lane, Yumville, 12345 | Phone: (555) 123-4567</p>
+    <a href="sitemap.html" class="text-white">Sitemap</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
